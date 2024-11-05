@@ -1,0 +1,57 @@
+plugins {
+    id  'com.android.library'
+    alias(libs.plugins.kotlinAndroid)
+}
+
+android {
+    compileSdk 34
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 33
+        versionCode 1
+        versionName VERSION_NAME
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    testOptions {
+        unitTests {
+            includeAndroidResources = true
+        }
+    }
+
+    namespace 'org.trackasia.android.gestures'
+}
+
+kotlin {
+    jvmToolchain(11)
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation(libs.annotation)
+    implementation libs.coreKtx
+    testImplementation(libs.kotlinStdlib)
+    testImplementation(libs.junit)
+    testImplementation(libs.mockitoCore)
+    testImplementation(libs.robolectric)
+    androidTestImplementation(libs.mockitoAndroid)
+    androidTestImplementation(libs.testRunner)
+    androidTestImplementation(libs.espressoCore)
+}
+
+apply from: "${rootDir}/gradle/javadoc.gradle"
+apply from: "${rootDir}/gradle/checkstyle.gradle"
+apply from: "${rootDir}/gradle/gradle-publish.gradle"

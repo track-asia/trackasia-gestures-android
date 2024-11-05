@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="org.trackasia.android.gestures.testapp">
+
+    <uses-sdk tools:overrideLibrary="com.mapbox.maps,
+        com.mapbox.common.module.okhttp,
+        com.mapbox.maps.extension.localization,
+        com.mapbox.maps.extension.style,
+        com.mapbox.maps.plugin.annotation,
+        com.mapbox.maps.plugin.logo,
+        com.mapbox.maps.plugin.compass,
+        com.mapbox.maps.plugin.gestures,
+        com.mapbox.maps.plugin.attribution,
+        com.mapbox.maps.plugin.viewport,
+        com.mapbox.maps.plugin.locationcomponent,
+        com.mapbox.maps.plugin.camera.animation,
+        com.mapbox.maps.plugin.scalebar,
+        com.mapbox.maps.plugin.overlay,
+        com.mapbox.maps.plugin.lifecycle,
+        com.mapbox.maps.module.telemetry,
+        com.mapbox.maps.base,
+        com.mapbox.maps.core,
+        com.mapbox.common.core,
+        com.mapbox.common.logger,
+        com.mapbox.common.loader,
+        com.mapbox.android.telemetry,
+    "/>
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".TestActivity"></activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MapboxActivity" />
+    </application>
+
+</manifest>
