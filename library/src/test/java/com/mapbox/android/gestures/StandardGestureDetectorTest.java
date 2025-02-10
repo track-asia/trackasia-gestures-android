@@ -1,4 +1,4 @@
-package org.trackasia.android.gestures;
+package com.trackasia.android.gestures;
 
 import org.junit.Test;
 import org.mockito.Mockito;

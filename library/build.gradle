@@ -32,7 +32,7 @@ android {
         }
     }
 
-    namespace 'org.trackasia.android.gestures'
+    namespace 'com.trackasia.android.gestures'
 }
 
 kotlin {

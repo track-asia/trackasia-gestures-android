@@ -2,7 +2,7 @@
 
 We welcome contributions to this gestures repository. If you're interested in helping develop the library, please follow these steps:
 
-- [Open an issue](https://github.com/trackasia/trackasia-gestures-android/issues/new) to kick off a conversation. It's a good idea to explain your plans before you push any code to make sure no one else is working on something similar and to discuss the best approaches to tackle your particular idea.
+- [Open an issue](https://github.com/track-asia/trackasia-gestures-android/issues/new) to kick off a conversation. It's a good idea to explain your plans before you push any code to make sure no one else is working on something similar and to discuss the best approaches to tackle your particular idea.
 
 - Create a new branch that will contain the code for your additions.
 

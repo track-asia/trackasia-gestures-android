@@ -5,9 +5,9 @@ ext {
     trackasiaArtifactDescription = 'TrackAsia Android Gestures Library'
     trackasiaDeveloperName = 'TrackAsia'
     trackasiaDeveloperId = 'trackasia'
-    trackasiaArtifactUrl = 'https://github.com/trackasia/trackasia-gestures-android'
-    trackasiaArtifactVcsUrl = 'https://github.com/trackasia/trackasia-gestures-android.git'
-    trackasiaArtifactScmUrl = 'scm:git@github.com/trackasia/trackasia-gestures-android.git'
+    trackasiaArtifactUrl = 'https://github.com/track-asia/trackasia-gestures-android'
+    trackasiaArtifactVcsUrl = 'https://github.com/track-asia/trackasia-gestures-android.git'
+    trackasiaArtifactScmUrl = 'scm:git@github.com/track-asia/trackasia-gestures-android.git'
     trackasiaArtifactLicenseName = 'BSD'
     trackasiaArtifactLicenseUrl = 'https://opensource.org/licenses/BSD-2-Clause'
     versionName = project.hasProperty('VERSION_NAME') ? project.property('VERSION_NAME') : System.getenv('VERSION_NAME')

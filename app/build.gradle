@@ -7,7 +7,7 @@ android {
     compileSdk 34
 
     defaultConfig {
-        applicationId "org.trackasia.android.gestures.testapp"
+        applicationId "com.trackasia.android.gestures.testapp"
         minSdkVersion 21
         compileSdk 34
         versionCode 1
@@ -32,7 +32,7 @@ android {
         }
     }
 
-    namespace 'org.trackasia.android.gestures.testapp'
+    namespace 'com.trackasia.android.gestures.testapp'
 }
 
 dependencies {
